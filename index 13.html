@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Unit 1 Review – Get ready for…</title>
+<style>
+:root{--ink:#14213d;--blue:#2a6fdb;--sun:#ffc233;--ok:#1fa774;--bad:#e5484d;--bg:#eef6ff}
+*{box-sizing:border-box}body{margin:0;font-family:"Trebuchet MS",Verdana,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:var(--ink);color:#fff;padding:12px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+h1{margin:0;font-size:1.25rem}h1 small{display:block;font-weight:400;font-size:.8rem;opacity:.8}
+.sc{background:var(--sun);color:var(--ink);border-radius:20px;padding:4px 14px;font-weight:700}
+main{max-width:820px;margin:0 auto;padding:14px}
+.tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin-bottom:14px}
+.tab{border:2px solid var(--ink);background:#fff;border-radius:12px;padding:8px;font:inherit;cursor:pointer;text-align:left;color:var(--ink)}
+.tab.on{background:var(--blue);color:#fff;border-color:var(--blue)}.tab b{display:block}.tab span{font-size:.8rem}
+.box{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;border:2px solid #cfe0f5}
+.q p{margin:0 0 8px;font-weight:700}.opts{display:flex;flex-wrap:wrap;gap:8px}
+.o{font:inherit;border:2px solid var(--ink);background:#fff;border-radius:24px;padding:7px 14px;cursor:pointer;color:var(--ink)}
+.o:hover:not(:disabled){background:#fff3cf}.o.ok{background:var(--ok);color:#fff;border-color:var(--ok)}.o.no{background:var(--bad);color:#fff;border-color:var(--bad)}
+.fb{margin-top:8px;font-size:.92rem}.fb.g{color:#0d7a53}.fb.b{color:#b3262b}
+.btn{font:inherit;font-weight:700;border:0;border-radius:24px;padding:10px 22px;background:var(--ink);color:#fff;cursor:pointer;margin:4px 4px 4px 0}.btn.y{background:var(--sun);color:var(--ink)}
+.tray{display:flex;flex-wrap:wrap;gap:8px;min-height:50px;padding:8px;background:#fff8e1;border:2px dashed var(--sun);border-radius:12px;margin-bottom:12px}
+.card{padding:7px 12px;background:#fff;border:2px solid var(--blue);border-radius:12px;cursor:grab;user-select:none}.card.sel{background:var(--sun)}
+.row{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}.row b{min-width:110px}
+.slot{flex:1;min-width:190px;min-height:44px;border:2px dashed #8aa;border-radius:12px;padding:7px 12px;background:#f7fbff}.slot.ok{background:var(--ok);color:#fff;border:2px solid var(--ok)}.slot.no{background:var(--bad);color:#fff;border:2px solid var(--bad)}
+.pass{background:#f2f7ff;border-left:6px solid var(--blue);padding:10px 14px;border-radius:8px;margin-bottom:12px}
+.big{font-size:3rem;font-weight:700;margin:0}.bar{height:12px;background:#dbe6f5;border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok)}
+details{margin:8px 0}footer{text-align:center;padding:18px;font-size:.9rem}
+button:focus-visible,.card:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+</style></head><body>
+<header><h1>Unit 1 Review: Get ready for…<small>Lesson 11 · Grade 7 English · Choose any level, in any order</small></h1><div class="sc" id="sc">Score 0 / 20</div></header>
+<main id="app"></main>
+<footer>Created by T.Badria Alfalahi</footer>
+<script>
+/* ---------- SCORM 1.2 ---------- */
+var api=null,t0=Date.now();
+function findAPI(w){var n=0;while(!w.API&&w.parent&&w.parent!==w&&n++<10)w=w.parent;return w.API||null}
+try{api=findAPI(window)||(window.opener?findAPI(window.opener):null)}catch(e){}
+function sc(k,v){try{if(api)api.LMSSetValue(k,String(v))}catch(e){}}
+function st(){var s=Math.round((Date.now()-t0)/1000),p=function(n){return(n<10?"0":"")+n};return p(Math.floor(s/3600))+":"+p(Math.floor(s%3600/60))+":"+p(s%60)}
+try{if(api){api.LMSInitialize("");var ls=api.LMSGetValue("cmi.core.lesson_status");if(!ls||ls==="not attempted")sc("cmi.core.lesson_status","incomplete");sc("cmi.core.score.min",0);sc("cmi.core.score.max",20)}}catch(e){}
+function push(done){sc("cmi.core.score.raw",score());if(done)sc("cmi.core.lesson_status",score()>=10?"passed":"failed");sc("cmi.core.session_time",st());try{if(api)api.LMSCommit("")}catch(e){}}
+window.addEventListener("beforeunload",function(){push(false);try{if(api)api.LMSFinish("")}catch(e){}});
+/* ---------- Data ---------- */
+var SEC=[
+{n:"Listening 1",d:"Who went where?",ic:"🎧",tip:"Listen for the names and key words, e.g. ice rink, harbour. Sometimes the people talk about more than one place."},
+{n:"Reading & Writing 1",d:"Fahad and Yousuf",ic:"💬",tip:"Read all of the responses carefully before you choose. Only one of them is possible!"},
+{n:"Listening 2",d:"Aida and Dana",ic:"🎟️",tip:"Before you begin, read and listen to the instructions. Present perfect: since + a point in time, for + a length of time."},
+{n:"Reading & Writing 2",d:"The National Space Centre",ic:"🔭",tip:"Work through all the options and read the whole sentence before you circle the correct word."}];
+var Q=[];
+[["Osama","⛸️ ice rink","Osama’s family had a day out and went to the ice rink."],["Juma","⚓ harbour","Juma walked to the harbour and looked at the boats."],["Sara","🎳 bowling alley","Sara went to the bowling alley with some friends."],["Mum","🎭 theatre","Mum is a costume designer. She works at the theatre."],["Aunt Anood","🖼️ art gallery","Aunt Anood is working at an art gallery."]].forEach(function(r){Q.push({s:0,t:"dd",q:r[0],a:r[1],why:r[2]})});
+var PL=["⛸️ ice rink","⚓ harbour","🎳 bowling alley","🎭 theatre","🖼️ art gallery","🔭 planetarium","🏰 castle"];
+function mc(s,q,a,w,why){Q.push({s:s,t:"mc",q:q,a:a,o:w.concat([a]).sort(function(){return Math.random()-.5}),why:why})}
+mc(1,"Fahad: “Can I come with you?”","Of course you can!",["No, it isn’t.","In the morning, I think.","To the safari park."],"Can I…? asks for permission, so we answer “Of course you can!”");
+mc(1,"Fahad: “When are you going?”","In the morning, I think.",["I like them all!","Yes, please.","To the safari park."],"When…? asks about time, so the answer is a time.");
+mc(1,"Fahad: “Are you going to have lunch in the café?”","No, we’re taking a picnic.",["To the safari park.","In the morning, I think.","You have to visit the website."],"It is a Yes/No question, so we answer with Yes or No.");
+mc(1,"Fahad: “How do we buy tickets?”","You have to visit the website.",["Of course you can!","No, it isn’t.","I like them all!"],"How…? asks about the way to do something.");
+mc(1,"Fahad: “Do you have a favourite animal?”","I like them all!",["Yes, please.","No, it isn’t.","In the morning, I think."],"A question about animals needs an answer about animals.");
+mc(2,"Listen: “Jasim’s been a footballer since he was ten.” Choose the sentence with a similar meaning.","Jasim became a football player when he was ten.",["Jasim has taken football lessons for ten years.","Jasim has been a football player for ten years."],"since he was ten = from the age of ten (a point in time).");
+mc(2,"Listen: “Muneera hasn’t tried painting before.” Choose the sentence with a similar meaning.","Muneera has never painted.",["Muneera doesn’t want to paint.","Muneera is going to try painting."],"hasn’t … before = has never.");
+mc(2,"What job does Dana want to do?","a camera operator",["a writer","a performer"],"Dana says: “I’d rather be a camera operator.”");
+mc(2,"How long has the art gallery been open for?","since January",["for one week","for one month"],"Aida says: “It’s been open since January.”");
+mc(2,"How much are the children’s tickets for the art gallery?","5 rials",["19 rials","9 rials"],"Adults are 19 rials but children are only 5 rials.");
+var G=[["(1) one of my favourite ___ in England","places",["place","space"],"“one of my favourite places”: after “one of” we use a plural noun."],["a science museum (2) ___ has six different galleries","that",["what","where"],"“that” links the museum to what it has."],["six different galleries (3) ___","to explore",["explore","exploring"],"galleries to explore: to + verb shows the purpose."],["a planetarium, which (4) ___ after a famous astronomer","is named",["named","naming"],"“is named after” = passive: it has the name of a person."],["I enjoy (5) ___ to the planetarium","going",["to go","be going"],"enjoy + verb-ing."]];
+G.forEach(function(g){mc(3,g[0],g[1],g[2],g[3])});
+Q.forEach(function(q,i){q.id=i});
+var A={},cur=0,sel=null,done=false,name="";
+function score(){var n=0;Q.forEach(function(q){if(A[q.id]&&A[q.id].c)n++});return n}
+function $(id){return document.getElementById(id)}
+/* ---------- Game ---------- */
+function answer(id,pick){if(A[id])return;var q=Q[id];A[id]={pick:pick,c:pick===q.a};sel=null;push(false);draw()}
+function listen(txt){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(txt);u.lang="en-GB";u.rate=.85;speechSynthesis.speak(u)}catch(e){alert("Audio is not supported here. Please read the script.")}}
+var SC=[
+"Did you see your Aunt Anood at the weekend? No, I didn’t. She’s been in Muscat since Monday. She’s working at an art gallery. How about your cousin Osama? Did you see him? Yes, I did! We had a day out with the family on Saturday. We wanted to go to the new planetarium, but we didn’t have enough money. So we decided to go to the ice rink. Did you know my mum has a new job? She’s a costume designer. She works at the theatre. What did you do on Saturday? I went for a walk with my dad and brother Juma. We walked to the harbour and looked at the boats. Did your sister go with you? Which sister? Sara? No, she went to the bowling alley with some friends.",
+"",
+"I saw a circus performer on TV last night. Would you like to be a circus performer, Aida? Not really. I’d rather be a TV presenter. Well, maybe. But I’d rather be a camera operator. Have you been to the new art gallery? No, I haven’t. How long has the art gallery been open? It’s been open since January. I’m going to the art gallery next week with my parents. When are you going? We’re going on Friday… no, Saturday evening. How much are the tickets? Adults are 19 rials but children are only 5 rials.",""];
+function draw(){
+ $("sc").textContent="Score "+score()+" / 20";
+ var h='<div class="tabs">'+SEC.map(function(s,i){var qs=Q.filter(function(q){return q.s===i}),d=qs.filter(function(q){return A[q.id]}).length;return '<button class="tab'+(i===cur&&!done?" on":"")+'" onclick="go('+i+')"><b>'+s.ic+" "+s.n+'</b><span>'+s.d+" · "+d+"/5 answered</span></button>"}).join("")+"</div>";
+ if(done){$("app").innerHTML=h+result();return}
+ var s=SEC[cur],qs=Q.filter(function(q){return q.s===cur});
+ h+='<div class="box"><h2 style="margin-top:0">'+s.ic+" "+s.n+": "+s.d+"</h2>";
+ if(cur===0)h+='<p>Listen to the conversation. <b>Drag</b> (or tap, then tap the box) the right place next to each name.</p><button class="btn y" onclick="listen(SC[0])">▶ Listen</button><details><summary>Show script</summary><p>'+SC[0]+"</p></details>";
+ if(cur===1)h+="<p>Fahad is asking Yousuf some questions. Choose the best answer for each question.</p>";
+ if(cur===2)h+='<p>Listen and choose the correct answer.</p><button class="btn y" onclick="listen(\'Jasim has been a footballer since he was ten. ... Muneera hasn\\u2019t tried painting before.\')">▶ Listen: 1 and 2</button><button class="btn y" onclick="listen(SC[2])">▶ Listen: Aida and Dana</button><details><summary>Show script</summary><p>'+SC[2]+"</p></details>";
+ if(cur===3)h+='<div class="pass">My name’s Lewis and one of my favourite <b>(1)</b> in England is the National Space Centre, in Leicester. It’s a science museum <b>(2)</b> has six different galleries <b>(3)</b>. One of the galleries is a rocket tower that is 42 metres tall. The centre also has the UK’s largest planetarium, which <b>(4)</b> after a famous astronomer, Sir Patrick Moore. I enjoy <b>(5)</b> to the planetarium to see shows because I want to be an astronomer one day.</div>';
+ if(cur===0){var used=qs.filter(function(q){return A[q.id]}).map(function(q){return A[q.id].pick});
+  h+='<div class="tray" ondragover="event.preventDefault()">'+PL.filter(function(p){return used.indexOf(p)<0}).map(function(p,i){return '<div class="card'+(sel===p?" sel":"")+'" tabindex="0" draggable="true" data-p="'+p+'" ondragstart="event.dataTransfer.setData(\'text\',this.dataset.p)" onclick="pickCard(this.dataset.p)">'+p+"</div>"}).join("")+"</div>";
+  qs.forEach(function(q){var a=A[q.id];h+='<div class="row"><b>'+q.q+'</b><div class="slot'+(a?a.c?" ok":" no":"")+'" ondragover="event.preventDefault()" ondrop="event.preventDefault();answer('+q.id+',event.dataTransfer.getData(\'text\'))" onclick="if(sel)answer('+q.id+',sel)">'+(a?a.pick+(a.c?" ✔":" ✖ → "+q.a):"Drop here")+"</div></div>"+(a?'<div class="fb '+(a.c?"g":"b")+'">'+q.why+"</div>":"")});
+ }else qs.forEach(function(q,n){var a=A[q.id];h+='<div class="q" style="margin-bottom:14px"><p>'+(n+1)+". "+q.q+'</p><div class="opts">'+q.o.map(function(o,i){return '<button class="o'+(a?o===q.a?" ok":o===a.pick?" no":"":"")+'" '+(a?"disabled":"")+' data-i="'+q.id+'" data-o="'+i+'" onclick="answer(+this.dataset.i,Q[+this.dataset.i].o[+this.dataset.o])">'+o+"</button>"}).join("")+"</div>"+(a?'<div class="fb '+(a.c?"g":"b")+'">'+(a.c?"✔ Correct! ":"✖ The correct answer is: <b>"+q.a+"</b>. ")+q.why+"</div>":"")+"</div>"});
+ h+="</div>";
+ var left=20-Object.keys(A).length;
+ h+='<button class="btn y" onclick="finish()">See my mark ('+left+" unanswered)</button>";
+ $("app").innerHTML=h}
+function go(i){cur=i;done=false;sel=null;draw()}
+function pickCard(p){sel=sel===p?null:p;draw()}
+function finish(){if(Object.keys(A).length<20&&!confirm("Some questions are unanswered and will count as 0. Continue?"))return;done=true;push(true);draw();scrollTo(0,0)}
+function grade(n){return n>=18?["A","Excellent! Outstanding work.","🏆"]:n>=15?["B","Very good! Just a few points to polish.","🌟"]:n>=12?["C","Good effort. Review the mistakes below.","👍"]:n>=10?["D","You passed. Practise the weaker levels again.","🙂"]:["E","Not yet. Practise the reinforcement tasks and try again!","💪"]}
+function result(){
+ var n=score(),g=grade(n),h='<div class="box" style="text-align:center"><div style="font-size:2.5rem">'+g[2]+'</div><p class="big">'+n+" / 20</p><p><b>Grade "+g[0]+" · "+Math.round(n*5)+"%</b></p><p>"+g[1]+"</p><p>"+(n>=10?"Status: Passed":"Status: Not yet passed")+"</p></div>";
+ h+='<div class="box"><h3 style="margin-top:0">Feedback by level</h3>';
+ SEC.forEach(function(s,i){var c=Q.filter(function(q){return q.s===i&&A[q.id]&&A[q.id].c}).length;h+="<p><b>"+s.ic+" "+s.n+"</b>: "+c+" / 5 — "+(c===5?"Perfect!":c>=3?"Good, check the tip below.":"Needs more practice.")+'</p><div class="bar"><i style="width:'+c*20+'%"></i></div>'+(c<5?'<p style="font-size:.9rem">💡 Exam tip: '+s.tip+"</p>":"")});
+ h+="</div>";
+ var W=Q.filter(function(q){return !(A[q.id]&&A[q.id].c)});
+ if(W.length){h+='<div class="box"><h3 style="margin-top:0">Reinforcement: try these again (not scored)</h3>';
+  W.forEach(function(q,k){var o=q.t==="dd"?PL.slice(0,5):q.o;h+='<div class="q" style="margin-bottom:14px"><p>'+(k+1)+". "+(q.t==="dd"?"Where did "+q.q+" go / work?":q.q)+'</p><div class="opts">'+o.map(function(x,i){return '<button class="o" data-i="'+q.id+'" data-x="'+i+'" onclick="rp(this)">'+x+"</button>"}).join("")+'</div><div class="fb" id="r'+q.id+'"></div></div>'});
+  h+="</div>"}else h+='<div class="box">🎉 No mistakes to review. Perfect score!</div>';
+ return h+'<button class="btn" onclick="again()">↻ Play again</button>'}
+function rp(b){var q=Q[+b.dataset.i],o=q.t==="dd"?PL.slice(0,5):q.o,x=o[+b.dataset.x],f=$("r"+q.id);if(x===q.a){b.className="o ok";f.className="fb g";f.innerHTML="✔ Yes! "+q.why}else{b.className="o no";f.className="fb b";f.innerHTML="✖ Try again."}}
+function again(){A={};cur=0;done=false;sel=null;t0=Date.now();Q.forEach(function(q){if(q.o)q.o.sort(function(){return Math.random()-.5})});sc("cmi.core.lesson_status","incomplete");draw()}
+draw();
+</script></body></html>
